@@ -27,7 +27,7 @@ void loop() {
 
 void sms()
 {
-  Serial.println("AT");    //To send SMS in Text Mode
+  Serial.println("AT");    
   delay(1000);
   Serial.println("AT+CMGF=1");    //To send SMS in Text Mode
   delay(1000);
@@ -42,6 +42,6 @@ void sms()
   delay(2000);
   Serial.print(sz);
   Serial.print(",");
-  Serial.println((char)26);//the stopping character
+  Serial.println((char)26);      //the stopping character
   delay(2000);
 }
