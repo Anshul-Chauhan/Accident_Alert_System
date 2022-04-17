@@ -104,7 +104,7 @@ void piezo()
 
 void sms()
 {
-  Serial.println("AT");    //To send SMS in Text Mode
+  Serial.println("AT");    
   delay(1000);
   Serial.println("AT+CMGF=1");    //To send SMS in Text Mode
   delay(1000);
@@ -118,12 +118,12 @@ void sms()
   Serial.println(longitude,6);      
   delay(2000);
   Serial.print(data);
-  Serial.println((char)26);//the stopping character
+  Serial.println((char)26);      //the stopping character
   delay(2000);
 }
 void sms_s()
 {
-  Serial.println("AT");    //To send SMS in Text Mode
+  Serial.println("AT");    
   delay(1000);
   Serial.println("AT+CMGF=1");    //To send SMS in Text Mode
   delay(1000);
@@ -132,7 +132,7 @@ void sms_s()
   Serial.print("Accident is not Serious.");
   delay(2000);
   Serial.print(data);
-  Serial.println((char)26);//the stopping character
+  Serial.println((char)26);      //the stopping character
   delay(2000);
 }
 
